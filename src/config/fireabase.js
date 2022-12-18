@@ -12,18 +12,9 @@ import {
   doc,
   addDoc,
 } from "firebase/firestore";
+import { firebaseConfig } from "./config";
 import { useDispatch } from "react-redux";
 import { setProduct } from "../redux/productSlice";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyDeK-o273ajGocTUnu7WZ_Y6JkAAzwE-zc",
-  authDomain: "fir-app-9fa06.firebaseapp.com",
-  projectId: "fir-app-9fa06",
-  storageBucket: "fir-app-9fa06.appspot.com",
-  messagingSenderId: "486910916145",
-  appId: "1:486910916145:web:c580edb49ac7b788f54710",
-  measurementId: "G-4CMXRXHKEX",
-};
 
 const app = initializeApp(firebaseConfig);
 getAnalytics(app);
